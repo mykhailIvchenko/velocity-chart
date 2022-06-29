@@ -1,0 +1,40 @@
+modules:
+  macro:
+    - key: velocity-chart-hello-world
+      function: main
+      title: velocity-chart
+      description: velocity chart
+      config:
+        function: config-function-key
+  function:
+    - key: main
+      handler: index.run
+    - key: config-function-key
+      handler: index.config
+app:
+  id: ari:cloud:ecosystem::app/e56cbb2a-8200-49d9-98d5-5bbf86feb3d4
+
+permissions:
+  scopes:
+    - read:issue.changelog:jira
+    - read:issue.transition:jira
+    - read:status:jira
+    - read:issue-type:jira
+    - read:project:jira
+    - read:project.property:jira
+    - read:user:jira
+    - read:application-role:jira
+    - read:group:jira
+    - read:issue-type-hierarchy:jira
+    - read:project-category:jira
+    - read:project-version:jira
+    - read:project.component:jira
+    - read:audit-log:jira
+    - read:avatar:jira
+    - read:field-configuration:jira
+    - read:issue-meta:jira
+    - read:content-details:confluence
+    - read:sprint:jira-software
+    - read:issue-details:jira
+    - read:jql:jira
+    - read:board-scope:jira-software
